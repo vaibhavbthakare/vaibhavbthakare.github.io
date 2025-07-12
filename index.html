@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Resume of Vaibhav Thakare">
+  <title>Vaibhav Thakare - Resume</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #333333;
+      --accent-color: #007acc;
+      --header-bg: #f5f5f5;
+    }
+    [data-theme="dark"] {
+      --bg-color: #1f1f1f;
+      --text-color: #f0f0f0;
+      --accent-color: #66ccff;
+      --header-bg: #2c2c2c;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--header-bg);
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+    }
+    header p {
+      margin: 5px 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 5px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 5px;
+      background-color: var(--accent-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: var(--accent-color);
+      color: #fff;
+      border: none;
+      padding: 8px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+  <header>
+    <img src="photo.jpg" alt="Vaibhav Thakare Photo">
+    <h1>Vaibhav Thakare</h1>
+    <p>Email: <a href="mailto:vaibhavbthakare@gmail.com">vaibhavbthakare@gmail.com</a> | Phone: +91-9175484644</p>
+    <p>
+      <a href="https://www.linkedin.com/in/vaibhav-thakare-49a0701b1/">LinkedIn</a> |
+      <a href="https://github.com/your-github-username">GitHub</a>
+    </p>
+    <a href="Resume_Vaibhav_Thakare.pdf" class="button" download>Download PDF</a>
+  </header>
+  <div class="container">
+    <section>
+      <h2>Profile</h2>
+      <p>I am an experienced PLM Windchill Administrator with a strong background in managing and optimizing Product Lifecycle Management (PLM) systems. Skilled in configuring, maintaining, and troubleshooting Windchill environments, I ensure smooth system performance and support critical business operations. I have experience in user management, data migration, and process automation, as well as a deep understanding of PLM best practices.</p>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>PLM Windchill: PDM Link, Project Link, MPM Link</li>
+        <li>ERP: SAP (MM), QAD</li>
+        <li>CAD Tools: CREO 8.0, CATIA V5, SolidWorks 8, AutoCAD, Work Group Manager</li>
+        <li>Operating Systems: Linux, Windows</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Work Experience</h2>
+      <h3>Tata Consultancy Services, Pune - IT Analyst (Sept 2023 – Present)</h3>
+      <ul>
+        <li>Daily Monitoring: Server, Publishing, Queue Monitoring</li>
+        <li>Administration Support: Rehost, Vault Configuration, CAD Worker Configuration</li>
+        <li>Major Troubleshooting Errors and Database Support Activities</li>
+      </ul>
+      <h3>IGW India Technologies, Pune - Senior Engineer (Nov 2021 – Jul 2023)</h3>
+      <ul>
+        <li>Windchill and CREO CAD Training</li>
+        <li>Data migration from QAD and SAP to PLM Windchill</li>
+      </ul>
+      <!-- Add more experience as needed -->
+    </section>
+    <section>
+      <h2>Education</h2>
+      <p>Post Graduate Diploma in Tool Design and CAD-CAM, Indo-German Tool Room (2014-2015)</p>
+      <p>BE in Mechanical Engineering, GHRCE, Nagpur (2009-2014)</p>
+    </section>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", "light");
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    }
+  </script>
+</body>
+</html>
